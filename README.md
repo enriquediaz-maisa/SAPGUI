@@ -14,15 +14,18 @@ Java 17 + Swing, sin dependencias externas. Es la misma base que **SAP GUI for
 Java** (el cliente oficial multiplataforma). SAP GUI for Windows es C++/Win32 y
 no se puede compilar ni probar en este entorno; por eso se ha elegido la variante Java.
 
-## Arranque
+## Instalación
+
+1. Instalar Java 17 o superior (por ejemplo, Temurin desde https://adoptium.net).
+2. Descargar `dist/sapgui.jar` de este repositorio.
+3. Hacer doble clic en `sapgui.jar`, o ejecutar desde una terminal en la carpeta de la descarga:
 
 ```bash
-mvn -q package
+java -jar sapgui.jar
 ```
 
-```bash
-java -jar target/sapgui.jar
-```
+Para compilarlo desde el código (opcional, requiere Maven): `mvn -q package`
+genera `target/sapgui.jar`.
 
 Opciones:
 
